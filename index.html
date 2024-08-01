@@ -47,28 +47,29 @@
     <main>
         <article id="title">
             <h1>Smart Camera</h1>
-            <button>GO LIVE</button>
+            <button>
+                <?php 
+
+                    $output = shell_exec("WebCamVideo_videofile (1).py");
+                    echo $output;
+
+                ?>
+            </button>
         </article>
         <article id="features">
             <h1 class="subtitle">Key Features</h1>
             <section>
                 <div>
                     <h2 class="subtitle">Feature 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maiores molestiae, aliquid
-                        earum, veritatis repellendus a impedit quia fugiat repudiandae adipisci consequuntur consequatur
-                        asperiores commodi. Illo corrupti enim possimus aliquid!</p>
+                    <p>Face Detection</p>
                 </div>
                 <div>
                     <h2 class="subtitle">Feature 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maiores molestiae, aliquid
-                        earum, veritatis repellendus a impedit quia fugiat repudiandae adipisci consequuntur consequatur
-                        asperiores commodi. Illo corrupti enim possimus aliquid!</p>
+                    <p>Object Detection</p>
                 </div>
                 <div>
                     <h2 class="subtitle">Feature 3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maiores molestiae, aliquid
-                        earum, veritatis repellendus a impedit quia fugiat repudiandae adipisci consequuntur consequatur
-                        asperiores commodi. Illo corrupti enim possimus aliquid!</p>
+                    <p>Capture and Save to Firebase</p>
                 </div>
                 <div>
                     <h2 class="subtitle">Feature 4</h2>
@@ -82,9 +83,9 @@
     <footer>
         <div id="about-us">
             <h1>Our Story</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maiores molestiae, aliquid earum,
-                veritatis repellendus a impedit quia fugiat repudiandae adipisci consequuntur consequatur asperiores
-                commodi. Illo corrupti enim possimus aliquid!</p>
+            <p>We developed the ESP-32 low-energy camera to push the boundaries of technology. With advanced features like wireless networking, sensor technology, and face recognition, our camera is designed for seamless integration into any product or standalone use. We focused on maximizing performance while ensuring top-notch image quality and user experience. Join us on our journey to revolutionize low-energy camera technology.
+
+</p>
         </div>
         <div id="prototype">
             <h1>Prototype</h1>
